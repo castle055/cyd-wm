@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/castle/repos/inhouse/cydwm/src/ops/x11_ops.h
+X11/Xlib.h
+-
+X11/Xatom.h
+-
+locale.h
+-
+
+/home/castle/repos/inhouse/cydwm/src/utils/logger.h
+string
+-
+
+/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_handlers.h
+X11/Xlib.h
+-
+unordered_map
+-
+
+/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_loop.cpp
+stdexcept
+-
+event_loop.h
+/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_loop.h
+event_handlers.h
+/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_handlers.h
+../../ops/x11_ops.h
+/home/castle/repos/inhouse/cydwm/src/ops/x11_ops.h
+../../utils/logger.h
+/home/castle/repos/inhouse/cydwm/src/utils/logger.h
+
+/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_loop.h
+

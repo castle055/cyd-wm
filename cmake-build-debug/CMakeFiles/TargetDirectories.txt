@@ -1,0 +1,3 @@
+/home/castle/repos/inhouse/cydwm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/castle/repos/inhouse/cydwm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/castle/repos/inhouse/cydwm/cmake-build-debug/CMakeFiles/cydwm.dir

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CydWM"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cydwm">
+				<Option output="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/cydwm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 cydwm"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cydwm/fast">
+				<Option output="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/cydwm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/castle/repos/inhouse/cydwm/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/../../../../include/c++/11.1.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 cydwm/fast"/>
+					<CompileFile command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j24 -f &quot;/home/castle/repos/inhouse/cydwm/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/config_mgr/config_mgr.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/config_mgr/config_mgr.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/infrastructure/repositories/clients_repo.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/infrastructure/repositories/clients_repo.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/infrastructure/repositories/monitors_repo.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/infrastructure/repositories/monitors_repo.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/infrastructure/repositories/structs.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/main.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/client_ops.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/client_ops.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/drw.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/drw.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/monitor_ops.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/monitor_ops.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/x11_ops.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/ops/x11_ops.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/utils/logger.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/utils/logger.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_handlers.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_loop.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/event_loop.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/keyboard_handler.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/event_handling/notify_handlers.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/program_shell/program_shell.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/program_shell/program_shell.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/watched_tasks.cpp">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/watched_tasks.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/watched_tasks/watched_tasks_cfg.h">
+			<Option target="cydwm"/>
+		</Unit>
+		<Unit filename="/home/castle/repos/inhouse/cydwm/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
