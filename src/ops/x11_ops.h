@@ -7,7 +7,7 @@
 
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
-#include <locale.h>
+#include <clocale>
 
 namespace x11_ops {
 
@@ -31,6 +31,12 @@ namespace x11_ops {
     unsigned int get_numlock_mask();
 
     Window get_root();
+
+    void focus_window(Window* win);
+
+    void focus_root();
+
+    bool send_event(Window win, Atom proto);
 }
 
 #endif //CYDWM_X11_OPS_H

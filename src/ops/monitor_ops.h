@@ -8,7 +8,7 @@
 #include "../infrastructure/repositories/monitors_repo.h"
 
 namespace monitor_ops {
-
+    void focus(monitor* m);
 }
 
 
