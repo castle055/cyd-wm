@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/cydwm.dir/main.cpp.o -o cydwm 
