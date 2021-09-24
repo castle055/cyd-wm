@@ -1,0 +1,101 @@
+KB:
+  desc: >
+    Keyboard events
+  types:
+    - KeyPress
+    - KeyRelease
+Pointer:
+  desc: >
+    Mouse events
+  types:
+    - ButtonPress
+    - ButtonRelease
+    - MotionNotify
+Win Crossing:
+  desc: >
+    Thrown when pointer changes windows, either due to mouse motion or hierarchical change.
+    If later, then guaranteed to be thrown after hierarchical change event (/(Map|Unmap|Configure|Gravity|Circulate)Notify/).
+  types:
+    - EnterNotify:
+        do:
+          - unfocus current focused Client
+          - focus ev Client
+    - LeaveNotify
+Input Focus:
+  desc: >
+    Thrown when keyboard focus changes.
+    Supposedly, meaning that along with pointer position, this determines which window receives keyboard input.
+  types:
+    - FocusIn:
+        do:
+          - extra focusing for selected client
+    - FocusOut
+KeyMap state notification:
+  desc: >
+    Thrown when keyboard state changes.
+    Always generated right after EnterNotify and FocusIn.
+  types:
+    - KeymapNotify
+Exposure:
+  desc: >
+    Thrown when an obscured part (or the whole) of a window becomes visible (X may have destroyed the contents of that region).
+  types:
+    - Expose:
+        do:
+          - DWM redraws entire status bar on that monitor (could be optimized)
+          - This is weird since DWM doesn't really check which windows is the event for.
+    - GraphicsExpose
+    - NoExpose
+Structure Control:
+  desc: >
+
+  types:
+    - CirculateRequest
+    - ConfigureRequest:
+        do:
+          - A sub window has been modified, is it allowed to change size?
+          - Reflect changes in stored state if necessary
+    - MapRequest:
+        do:
+          - NEW WINDOW!! Create client and manage it.
+    - ResizeRequest
+Window state notification:
+  desc: >
+  types:
+    - CirculateNotify
+    - ConfigureNotify:
+        do:
+          - If event is NOT for 'root' window, then return
+          - Otherwise, update corresponding variables in program and
+          - rearrange subwindows if necessary
+    - CreateNotify
+    - DestroyNotify:
+        do:
+          - Unmanage client, which is destroyed (see client.cpp in CDWM)
+    - GravityNotify
+    - MapNotify
+    - MappingNotify:
+        do:
+          - Refresh keyboard mappings.
+          - Re-grab keys.
+    - ReparentNotify
+    - UnmapNotify:
+        do:
+          - Unmanage client, which is NOT destroyed (see client.cpp in CDWM)
+    - VisibilityNotify
+Colormap state notification:
+  desc: >
+  types:
+    - ColormapNotify
+Client communication:
+  desc: >
+  types:
+    - ClientMessage:
+        do:
+          - Someone called XSendEvent(), whatcha sayin'?.
+    - PropertyNotify:
+        do:
+          - Some property changes need to be handled (window type, size hints, transient(?),...) [check and study like XEvents]
+    - SelectionClear
+    - SelectionNotify
+    - SelectionRequest
