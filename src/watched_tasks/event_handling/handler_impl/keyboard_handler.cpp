@@ -2,9 +2,9 @@
 // Created by castle on 8/23/21.
 //
 
-#include "event_handlers.h"
-#include "../../ops/x11_ops.h"
-#include "../../config_mgr/config_mgr.h"
+#include "../event_handlers.h"
+#include "../../../ops/x11_ops.h"
+#include "../../../config_mgr/config_mgr.h"
 
 #define CLEANMASK(mask)         ((mask) & ~(x11_ops::get_numlock_mask()|LockMask) & (ShiftMask|ControlMask|Mod1Mask|Mod2Mask|Mod3Mask|Mod4Mask|Mod5Mask))
 

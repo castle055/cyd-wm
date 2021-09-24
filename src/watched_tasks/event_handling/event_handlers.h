@@ -10,18 +10,19 @@
 
 namespace event_handlers {
     void keypress               (XEvent* ev);
-    static void buttonpress            (XEvent* ev) {}
+    void buttonpress            (XEvent* ev);
     void motion_notify          (XEvent* ev);
     void enter_notify           (XEvent* ev);
-    static void focus_in               (XEvent* ev) {}
-    static void expose                 (XEvent* ev) {}
+    void focus_in               (XEvent* ev);
+    void expose                 (XEvent* ev);
     void destroy_notify         (XEvent* ev);
     void unmap_notify           (XEvent* ev);
-    static void map_request            (XEvent* ev) {}
+    void map_request            (XEvent* ev);
     void configure_notify       (XEvent* ev);
     void property_notify        (XEvent* ev);
-    static void client_message         (XEvent* ev) {}
+    void client_message         (XEvent* ev);
     void mapping_notify         (XEvent* ev);
+    void configure_request      (XEvent* ev);
 
     static std::unordered_map<int, void (*)(XEvent*)> handlers {
           /*  EVENT TYPE             FUNCTION HANDLER           */
@@ -37,7 +38,8 @@ namespace event_handlers {
             {ConfigureNotify,       configure_notify            },
             {PropertyNotify,        property_notify             },
             {ClientMessage,         client_message              },
-            {MappingNotify,         mapping_notify              }
+            {MappingNotify,         mapping_notify              },
+            {ConfigureRequest,      configure_request           }
     };
 }
 
