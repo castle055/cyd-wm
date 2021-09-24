@@ -11,6 +11,8 @@
 
 namespace x11_ops {
 
+    typedef Window Win;
+
     enum {
         CurNormal, CurResize, CurMove, CurLast
     }; /* cursor */

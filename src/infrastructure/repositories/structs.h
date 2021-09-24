@@ -14,7 +14,7 @@ struct client {
     Window win;
 };
 struct workspace {
-    syd::string title;
+    std::string title;
     std::list<client*> clients;
 };
 struct monitor {

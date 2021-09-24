@@ -23,7 +23,7 @@ add_executable(cydwm
         ops/x11_ops.cpp
         ops/drw.h ops/drw.cpp
         infrastructure/repositories/structs.h
-        utils/logger.cpp utils/logger.h watched_tasks/event_handling/notify_handlers.cpp infrastructure/repositories/clients_repo.cpp infrastructure/repositories/clients_repo.h ops/client_ops.cpp ops/client_ops.h infrastructure/repositories/monitors_repo.cpp infrastructure/repositories/monitors_repo.h ops/monitor_ops.cpp ops/monitor_ops.h ops/window_ops.cpp ops/window_ops.h)
+        utils/logger.cpp utils/logger.h infrastructure/repositories/clients_repo.cpp infrastructure/repositories/clients_repo.h ops/client_ops.cpp ops/client_ops.h infrastructure/repositories/monitors_repo.cpp infrastructure/repositories/monitors_repo.h ops/monitor_ops.cpp ops/monitor_ops.h ops/window_ops.cpp ops/window_ops.h)
 
 include_directories (/usr/include/freetype2)
 target_link_libraries(cydwm X11 fontconfig Xft pthread)
